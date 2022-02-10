@@ -9,6 +9,8 @@ body {
 }
 header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: rgb(202, 113, 113);
   padding: 3;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -18,7 +20,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   font-size: 3vw;
-  margin: 0;
+  margin: 15px;
 }
 
 header a {
@@ -29,8 +31,7 @@ header a {
 
 .contents {
   display: flex;
-  margin: 20px;
-  justify-content: space-around;
+  margin: 15px;
   list-style: none;
   border-radius: 15px;
   font-size: 24px;
