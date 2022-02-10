@@ -1,3 +1,6 @@
+:root {
+  --primary-color: #9e1b32;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,49 +9,58 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-color);
 }
 header {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgb(202, 113, 113);
-  padding: 3;
+  background-color: var(--primary-color);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+header span {
+  width: auto;
+  color: gray;
+  font-style: italic;
+  /* text-align: center; */
+  margin: 10px 0 0 0;
+}
 header h1 {
   display: flex;
-  flex-wrap: wrap;
   font-size: 3vw;
-  margin: 15px;
+  margin: 5px 0px 0px 5px;
+  color: white;
 }
 
 header a {
   display: flex;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .contents {
+  text-align: end;
   display: flex;
+  justify-content: space-around;
   margin: 15px;
   list-style: none;
   border-radius: 15px;
-  font-size: 24px;
+  font-size: 2vw;
   padding: 15px;
 }
 
-header h2 {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
+header a:hover {
+  color: gray;
 }
 
 .hero {
-  background-image: url("../images/test.jpg");
+  background-image: url("../images/16886.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-position: 80%;
-  size: 800px 500px;
+  height: 600px;
+}
+
+.about-me {
+  background-color: #e694a3;
+  color: var(--primary-color);
 }
