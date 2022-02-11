@@ -1,5 +1,6 @@
 :root {
   --primary-color: #9e1b32;
+  --secondary-color: #e694a3;
 }
 * {
   margin: 0;
@@ -15,15 +16,18 @@ header {
   justify-content: space-between;
   background-color: var(--primary-color);
   font-family: Georgia, "Times New Roman", Times, serif;
+  position: sticky;
+  top: 0;
 }
 
 header span {
   width: auto;
   color: gray;
   font-style: italic;
-  /* text-align: center; */
-  margin: 10px 0 0 0;
+  text-align: center;
+  margin: 15px 0 0 0;
 }
+
 header h1 {
   display: flex;
   font-size: 3vw;
@@ -50,35 +54,96 @@ header a {
 
 header a:hover {
   color: gray;
+  font-size: 2.1vw;
+  text-shadow: 0 0 10px black;
 }
 
 .hero {
   background-image: url("../images/16886.jpg");
   background-size: cover;
   background-position: center;
-  background-position: 80%;
   height: 600px;
 }
 
 .about-me {
   display: flex;
   justify-content: space-between;
-  background-color: #e694a3;
+  background-color: gray;
   color: var(--primary-color);
-  padding: 50px 0 0 0;
+  padding: 50px 0 20px 0;
+  border-bottom: var(--primary-color);
 }
 
 .about-me h2 {
   text-align: center;
   width: 600px;
   font-size: 4vw;
+  /* border-bottom: 10px solid var(--primary-color); */
+  margin: 200px 0;
 }
 
 .about-me img {
   border-radius: 50%;
-  size: ;
+  margin: 0 20px 20px 0;
+  box-shadow: 0 0 10px var(--primary-color);
+  box-sizing: 3vw;
 }
 
 .about-box {
   width: 50%;
+  margin: 150px 0;
+}
+
+.work {
+  background-color: var(--secondary-color);
+  justify-content: space-around;
+  border-top: 5px solid var(--primary-color);
+}
+
+.work h2 {
+  color: var(--primary-color);
+  font-size: 4vw;
+  text-align: center;
+  padding: 15px;
+  vertical-align: auto;
+}
+
+.big-co {
+  height: 20vw;
+  text-align: center;
+}
+
+.big-co img {
+  border-radius: 15px;
+}
+
+.small-co {
+  display: flex;
+  justify-content: space-between;
+  height: 10vw;
+  margin: 150px;
+}
+
+.small-co img {
+  border-radius: 15px;
+  height: 7vw;
+}
+
+.work img:hover {
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+footer {
+  color: white;
+  text-align: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+footer a {
+  color: white;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
 }
