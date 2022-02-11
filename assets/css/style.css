@@ -61,6 +61,24 @@ header a:hover {
 }
 
 .about-me {
+  display: flex;
+  justify-content: space-between;
   background-color: #e694a3;
   color: var(--primary-color);
+  padding: 50px 0 0 0;
+}
+
+.about-me h2 {
+  text-align: center;
+  width: 600px;
+  font-size: 4vw;
+}
+
+.about-me img {
+  border-radius: 50%;
+  size: ;
+}
+
+.about-box {
+  width: 50%;
 }
