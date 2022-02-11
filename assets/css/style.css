@@ -18,6 +18,7 @@ header {
   font-family: Georgia, "Times New Roman", Times, serif;
   position: sticky;
   top: 0;
+  border-radius: 15px;
 }
 
 header span {
@@ -25,7 +26,7 @@ header span {
   color: gray;
   font-style: italic;
   text-align: center;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0 10px;
 }
 
 header h1 {
@@ -35,7 +36,19 @@ header h1 {
   color: white;
 }
 
-header a {
+header h1 a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+header h1 a:hover {
+  color: gray;
+  font-size: 3.1vw;
+  text-shadow: 0 0 10px black;
+}
+
+header nav ul li a {
   display: flex;
   text-decoration: none;
   color: white;
@@ -52,7 +65,7 @@ header a {
   padding: 15px;
 }
 
-header a:hover {
+header nav ul li a:hover {
   color: gray;
   font-size: 2.1vw;
   text-shadow: 0 0 10px black;
@@ -69,7 +82,7 @@ header a:hover {
   display: flex;
   justify-content: space-between;
   background-color: gray;
-  color: var(--primary-color);
+  color: white;
   padding: 50px 0 20px 0;
   border-bottom: var(--primary-color);
 }
@@ -78,15 +91,15 @@ header a:hover {
   text-align: center;
   width: 600px;
   font-size: 4vw;
-  /* border-bottom: 10px solid var(--primary-color); */
+  color: var(--primary-color);
   margin: 200px 0;
 }
 
 .about-me img {
   border-radius: 50%;
   margin: 0 20px 20px 0;
-  box-shadow: 0 0 10px var(--primary-color);
-  box-sizing: 3vw;
+  box-shadow: 0 0 20px var(--primary-color);
+  object-fit: contain;
 }
 
 .about-box {
@@ -95,7 +108,7 @@ header a:hover {
 }
 
 .work {
-  background-color: var(--secondary-color);
+  background-color: gray;
   justify-content: space-around;
   border-top: 5px solid var(--primary-color);
 }
@@ -109,7 +122,7 @@ header a:hover {
 }
 
 .big-co {
-  height: 20vw;
+  width: 2vw;
   text-align: center;
 }
 
@@ -137,7 +150,7 @@ footer {
   color: white;
   text-align: right;
   margin-right: 15px;
-  margin-top: 15px;
+  margin-top: -145px;
 }
 
 footer a {
