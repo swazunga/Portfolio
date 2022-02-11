@@ -18,7 +18,7 @@ header {
   font-family: Georgia, "Times New Roman", Times, serif;
   position: sticky;
   top: 0;
-  border-radius: 15px;
+  border-radius: 0 0 15% 15%;
 }
 
 header span {
@@ -100,6 +100,7 @@ header nav ul li a:hover {
   margin: 0 20px 20px 0;
   box-shadow: 0 0 20px var(--primary-color);
   object-fit: contain;
+  background-color: white;
 }
 
 .about-box {
@@ -109,7 +110,6 @@ header nav ul li a:hover {
 
 .work {
   background-color: gray;
-  justify-content: space-around;
   border-top: 5px solid var(--primary-color);
 }
 
@@ -123,11 +123,14 @@ header nav ul li a:hover {
 
 .big-co {
   width: 2vw;
+  display: block;
   text-align: center;
 }
 
 .big-co img {
   border-radius: 15px;
+  width: 60vw;
+  text-align: center;
 }
 
 .small-co {
@@ -159,4 +162,30 @@ footer a {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  .about-me {
+    display: inline-block;
+    border: none;
+  }
+
+  .about-me h2 {
+    width: auto;
+  }
+
+  .about-box {
+    width: auto;
+    padding: 0 10px 0 10px;
+  }
+
+  .about-me img {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 50%;
+  }
+
+  .big-co {
+    width: 25%;
+    margin: 0 auto 0 auto;
+    display: block;
+    text-align: left;
+  }
 }
