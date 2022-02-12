@@ -92,7 +92,6 @@ header nav ul li a:hover {
   width: 600px;
   font-size: 4vw;
   color: var(--primary-color);
-  margin: 200px 0;
 }
 
 .about-me img {
@@ -105,7 +104,7 @@ header nav ul li a:hover {
 
 .about-box {
   width: 50%;
-  margin: 150px 0;
+  margin: 20px 0;
 }
 
 .work {
@@ -122,9 +121,10 @@ header nav ul li a:hover {
 }
 
 .big-co {
-  width: 2vw;
-  display: block;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .big-co img {
@@ -183,9 +183,8 @@ footer a {
   }
 
   .big-co {
-    width: 25%;
+    width: 100%;
     margin: 0 auto 0 auto;
-    display: block;
     text-align: left;
   }
 }
