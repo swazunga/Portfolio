@@ -135,9 +135,9 @@ header nav ul li a:hover {
 
 .small-co {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 10vw;
-  margin: 150px;
+  margin: 50px;
 }
 
 .small-co img {
@@ -153,7 +153,6 @@ footer {
   color: white;
   text-align: right;
   margin-right: 15px;
-  margin-top: -145px;
 }
 
 footer a {
@@ -186,5 +185,63 @@ footer a {
     width: 100%;
     margin: 0 auto 0 auto;
     text-align: left;
+  }
+}
+
+/* Media query for cell phones */
+
+@media screen and (max-width: 575px) {
+  header h1 {
+    font-size: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header span {
+    font-size: 8vw;
+  }
+
+  header nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.5vw;
+  }
+
+  header nav ul li a:hover {
+    font-size: 3.5vw;
+  }
+
+  .hero {
+    background-image: url("../images/16886-small.jpg");
+  }
+
+  .about-me h2 {
+    font-size: 10vw;
+  }
+
+  .work {
+    height: 100vw;
+  }
+
+  .work h2 {
+    font-size: 10vw;
+  }
+
+  .big-co {
+    margin: 0 0 -50px 0;
+  }
+
+  .big-co img {
+    width: 75vw;
+  }
+
+  .small-co {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .small-co img {
+    height: 18vw;
   }
 }
