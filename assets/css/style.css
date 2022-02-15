@@ -204,11 +204,11 @@ footer a {
   header nav ul li a {
     display: flex;
     justify-content: space-between;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
 
   header nav ul li a:hover {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
 
   .hero {
