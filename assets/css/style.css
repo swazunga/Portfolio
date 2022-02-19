@@ -145,6 +145,24 @@ header nav ul li a:hover {
   height: 7vw;
 }
 
+.small-co span {
+  position: absolute;
+  top: 220%;
+  right: 135px;
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+}
+
+/* .run-buddy {
+  display: flex;
+}
+
+.run-buddy img {
+  display: flex;
+  height: 5vw;
+} */
+
 .work img:hover {
   box-shadow: 0 0 10px var(--primary-color);
 }
@@ -220,7 +238,7 @@ footer a {
   }
 
   .work {
-    height: 100vw;
+    height: 110vw;
   }
 
   .work h2 {
@@ -237,7 +255,7 @@ footer a {
 
   .small-co {
     display: flex;
-    flex-direction: row;
+
     flex-wrap: wrap;
   }
 
